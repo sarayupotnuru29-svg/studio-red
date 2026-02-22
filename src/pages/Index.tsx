@@ -29,7 +29,7 @@ const Index = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[calc(100vh-5rem)] lg:h-[calc(100vh-6rem)] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroImg})` }}
