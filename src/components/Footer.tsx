@@ -1,17 +1,24 @@
 import { Link } from "react-router-dom";
-import { Instagram, Phone, Mail, MapPin } from "lucide-react";
+import { Instagram, Phone, Mail, MapPin, Heart } from "lucide-react";
+import logo from "@/assets/Original-on-transparent.png";
+
+const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
 const Footer = () => {
   return (
     <footer className="bg-card border-t border-primary/20">
       <div className="container-luxury py-16 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Brand */}
+          {/* Brand Logo & Tagline */}
           <div>
-            <h3 className="font-heading text-2xl text-primary mb-4">Studio Red</h3>
-            <p className="font-accent text-muted-foreground text-lg italic leading-relaxed">
-              Home Is Where Our Story Begins
-            </p>
+            <Link to="/" onClick={scrollToTop} className="block mb-6">
+              <img 
+                src={logo} 
+                alt="Studio Red" 
+                className="h-16 lg:h-20 w-auto object-contain" 
+              />
+            </Link>
+            
           </div>
 
           {/* Quick Links */}
@@ -22,6 +29,7 @@ const Footer = () => {
                 <Link
                   key={link}
                   to={link === "Home" ? "/" : `/${link.toLowerCase()}`}
+                  onClick={scrollToTop}
                   className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm tracking-wide"
                 >
                   {link}
@@ -35,7 +43,14 @@ const Footer = () => {
             <h4 className="text-sm tracking-luxury uppercase text-primary mb-6">Services</h4>
             <div className="flex flex-col gap-3">
               {["Residential Interiors", "Commercial Interiors", "Home Theaters", "Ceiling & Paintings", "Design & Execution"].map((s) => (
-                <span key={s} className="text-muted-foreground text-sm tracking-wide">{s}</span>
+                <Link
+                  key={s}
+                  to="/services"
+                  onClick={scrollToTop}
+                  className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm tracking-wide"
+                >
+                  {s}
+                </Link>
               ))}
             </div>
           </div>
@@ -67,9 +82,30 @@ const Footer = () => {
         </div>
 
         <div className="gold-divider-wide mt-16 mb-8" />
-        <p className="text-center text-muted-foreground text-xs tracking-luxury">
-          © {new Date().getFullYear()} Studio Red. All Rights Reserved.
-        </p>
+        
+        <div className="flex flex-col items-center gap-4">
+          <p className="text-center text-muted-foreground text-xs tracking-luxury">
+            © {new Date().getFullYear()} Studio Red. All Rights Reserved.
+          </p>
+          
+          {/* StaffArc Attribution */}
+          <div className="flex justify-center items-center gap-1 text-xs tracking-wide">
+            Made with <Heart className="inline h-4 w-4 text-red-500 mx-1 fill-red-500" /> by
+            <a
+              href="https://staffarc.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-orange-600 hover:underline font-medium"
+            >
+              <img
+                src="https://www.staffarc.in/images/Staffarc-logo.png"
+                alt="StaffArc logo"
+                className="h-4 w-4 object-contain"
+              />
+              StaffArc
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   );
