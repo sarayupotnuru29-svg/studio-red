@@ -21,7 +21,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Navbar />
-        <main className="pt-20 lg:pt-24">
+        <main>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />

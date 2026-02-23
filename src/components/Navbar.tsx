@@ -36,9 +36,8 @@ const Navbar = () => {
       }`}
     >
       <div className="container-luxury flex items-center justify-between h-20 lg:h-24">
-        <Link to="/" className="flex-shrink-0 flex items-center gap-3">
+        <Link to="/" className="flex-shrink-0">
           <img src={logo} alt="Studio Red" className="h-12 lg:h-14 w-auto" />
-          <span className="font-heading text-xl lg:text-2xl text-primary">Studio Red</span>
         </Link>
 
         {/* Desktop Nav */}
