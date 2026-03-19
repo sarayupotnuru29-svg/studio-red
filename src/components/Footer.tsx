@@ -18,21 +18,26 @@ const Footer = () => {
                 className="h-16 lg:h-20 w-auto object-contain" 
               />
             </Link>
-            
           </div>
 
           {/* Quick Links */}
           <div>
             <h4 className="text-sm tracking-luxury uppercase text-primary mb-6">Quick Links</h4>
             <div className="flex flex-col gap-3">
-              {["Home", "About", "Services", "Process", "Contact"].map((link) => (
+              {[
+                { name: "Home", path: "/" },
+                { name: "About", path: "/about" },
+                { name: "Services", path: "/services" },
+                { name: "Previous Projects", path: "/projects" },
+                { name: "Contact", path: "/contact" },
+              ].map((link) => (
                 <Link
-                  key={link}
-                  to={link === "Home" ? "/" : `/${link.toLowerCase()}`}
+                  key={link.name}
+                  to={link.path}
                   onClick={scrollToTop}
                   className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm tracking-wide"
                 >
-                  {link}
+                  {link.name}
                 </Link>
               ))}
             </div>
@@ -42,7 +47,14 @@ const Footer = () => {
           <div>
             <h4 className="text-sm tracking-luxury uppercase text-primary mb-6">Services</h4>
             <div className="flex flex-col gap-3">
-              {["Residential Interiors", "Commercial Interiors", "Home Theaters", "Ceiling & Paintings", "Design & Execution"].map((s) => (
+              {[
+                "Residential Interiors",
+                "Commercial Interiors",
+                "Home Theatres",
+                "Turnkey Projects",
+                "False Ceilings",
+                "Modular Wardrobes & Kitchens",
+              ].map((s) => (
                 <Link
                   key={s}
                   to="/services"
