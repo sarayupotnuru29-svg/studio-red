@@ -41,12 +41,11 @@ const Index = () => {
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="relative z-10 text-center container-luxury"
         >
-          <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl text-primary mb-6">
-            Studio Red
-          </h1>
-          <p className="font-accent text-2xl md:text-3xl text-foreground italic mb-4">
-            Home Is Where Our Story Begins
-          </p>
+          <img
+            src={logo}
+            alt="Studio Red"
+            className="h-28 md:h-36 lg:h-44 w-auto object-contain mx-auto mb-6"
+          />
           <div className="gold-divider-wide my-8" />
           <p className="font-body text-muted-foreground max-w-xl mx-auto mb-10 text-sm md:text-base leading-relaxed tracking-wide">
             The essence of our interior design will always be about people and how they live.

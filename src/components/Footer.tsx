@@ -52,8 +52,12 @@ const Footer = () => {
                 "Commercial Interiors",
                 "Home Theatres",
                 "Turnkey Projects",
+                "Project Management",
+                "Design & Execution",
                 "False Ceilings",
                 "Modular Wardrobes & Kitchens",
+                "Painting & Customisation",
+                "Granite / Quartz / Marble / Tiles",
               ].map((s) => (
                 <Link
                   key={s}
