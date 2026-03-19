@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import SectionTitle from "@/components/SectionTitle";
 import ServiceCard from "@/components/ServiceCard";
+import logo from "@/assets/Original-on-transparent.png";
 import heroImg from "@/assets/hero-living-room.jpg";
 import aboutImg from "@/assets/about-interior.jpg";
 import serviceResidential from "@/assets/service-residential.jpg";
