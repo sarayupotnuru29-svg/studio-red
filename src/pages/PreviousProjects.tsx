@@ -20,6 +20,37 @@ import serviceFalseCeiling from "@/assets/service-false-ceiling.jpg";
 import servicePainting from "@/assets/service-painting.jpg";
 import serviceStone from "@/assets/service-stone.jpg";
 
+import residential2 from "@/assets/projects/residential-2.jpg";
+import residential3 from "@/assets/projects/residential-3.jpg";
+import residential4 from "@/assets/projects/residential-4.jpg";
+import residential5 from "@/assets/projects/residential-5.jpg";
+import commercial2 from "@/assets/projects/commercial-2.jpg";
+import commercial3 from "@/assets/projects/commercial-3.jpg";
+import commercial4 from "@/assets/projects/commercial-4.jpg";
+import commercial5 from "@/assets/projects/commercial-5.jpg";
+import theater2 from "@/assets/projects/theater-2.jpg";
+import theater3 from "@/assets/projects/theater-3.jpg";
+import theater4 from "@/assets/projects/theater-4.jpg";
+import turnkey2 from "@/assets/projects/turnkey-2.jpg";
+import turnkey3 from "@/assets/projects/turnkey-3.jpg";
+import turnkey4 from "@/assets/projects/turnkey-4.jpg";
+import projectMgmt2 from "@/assets/projects/project-mgmt-2.jpg";
+import projectMgmt3 from "@/assets/projects/project-mgmt-3.jpg";
+import execution2 from "@/assets/projects/execution-2.jpg";
+import execution3 from "@/assets/projects/execution-3.jpg";
+import ceiling2 from "@/assets/projects/ceiling-2.jpg";
+import ceiling3 from "@/assets/projects/ceiling-3.jpg";
+import ceiling4 from "@/assets/projects/ceiling-4.jpg";
+import modular2 from "@/assets/projects/modular-2.jpg";
+import modular3 from "@/assets/projects/modular-3.jpg";
+import modular4 from "@/assets/projects/modular-4.jpg";
+import painting2 from "@/assets/projects/painting-2.jpg";
+import painting3 from "@/assets/projects/painting-3.jpg";
+import painting4 from "@/assets/projects/painting-4.jpg";
+import stone2 from "@/assets/projects/stone-2.jpg";
+import stone3 from "@/assets/projects/stone-3.jpg";
+import stone4 from "@/assets/projects/stone-4.jpg";
+
 interface Project {
   id: string;
   title: string;
@@ -34,70 +65,70 @@ const projects: Project[] = [
     title: "Modern Villa Living Room",
     serviceId: "residential-interiors",
     featuredImage: projectResidential1,
-    gallery: [projectResidential1, serviceResidential],
+    gallery: [projectResidential1, serviceResidential, residential2, residential3, residential4, residential5],
   },
   {
     id: "com-1",
     title: "Corporate Office Redesign",
     serviceId: "commercial-interiors",
     featuredImage: projectCommercial1,
-    gallery: [projectCommercial1, serviceCommercial],
+    gallery: [projectCommercial1, serviceCommercial, commercial2, commercial3, commercial4, commercial5],
   },
   {
     id: "the-1",
     title: "Private Home Cinema",
     serviceId: "home-theatres",
     featuredImage: projectTheater1,
-    gallery: [projectTheater1, serviceTheater],
+    gallery: [projectTheater1, serviceTheater, theater2, theater3, theater4],
   },
   {
     id: "tur-1",
     title: "Turnkey Luxury Apartment",
     serviceId: "turnkey-projects",
     featuredImage: serviceTurnkey,
-    gallery: [serviceTurnkey, projectResidential1],
+    gallery: [serviceTurnkey, turnkey2, turnkey3, turnkey4, projectResidential1],
   },
   {
     id: "pm-1",
     title: "Multi-Floor Project Coordination",
     serviceId: "project-management",
     featuredImage: serviceProjectMgmt,
-    gallery: [serviceProjectMgmt, serviceExecution],
+    gallery: [serviceProjectMgmt, projectMgmt2, projectMgmt3, serviceExecution, commercial2],
   },
   {
     id: "de-1",
     title: "End-to-End Interior Transformation",
     serviceId: "design-execution",
     featuredImage: serviceExecution,
-    gallery: [serviceExecution, projectResidential1],
+    gallery: [serviceExecution, execution2, execution3, projectResidential1, residential2],
   },
   {
     id: "fc-1",
     title: "Luxury False Ceiling Installation",
     serviceId: "false-ceilings",
     featuredImage: serviceFalseCeiling,
-    gallery: [serviceFalseCeiling, serviceTurnkey],
+    gallery: [serviceFalseCeiling, ceiling2, ceiling3, ceiling4, residential3],
   },
   {
     id: "mod-1",
     title: "Modular Kitchen & Wardrobe Suite",
     serviceId: "modular-wardrobes-kitchens",
     featuredImage: projectKitchen1,
-    gallery: [projectKitchen1, serviceModular],
+    gallery: [projectKitchen1, serviceModular, modular2, modular3, modular4],
   },
   {
     id: "pai-1",
     title: "Custom Wall Art & Painting",
     serviceId: "painting-customisation",
     featuredImage: servicePainting,
-    gallery: [servicePainting, projectResidential1],
+    gallery: [servicePainting, painting2, painting3, painting4, residential4],
   },
   {
     id: "sto-1",
     title: "Premium Stone & Tile Work",
     serviceId: "granite-quartz-marble-tiles",
     featuredImage: serviceStone,
-    gallery: [serviceStone, projectKitchen1],
+    gallery: [serviceStone, stone2, stone3, stone4, residential5],
   },
 ];
 
@@ -200,6 +231,9 @@ const PreviousProjects = () => {
                     </h3>
                     <p className="text-xs tracking-luxury uppercase text-muted-foreground">
                       {serviceCategories.find((c) => c.id === project.serviceId)?.label}
+                    </p>
+                    <p className="text-xs text-muted-foreground mt-2">
+                      {project.gallery.length} photos
                     </p>
                   </div>
                 </motion.div>
