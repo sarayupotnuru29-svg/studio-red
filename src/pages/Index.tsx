@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import SectionTitle from "@/components/SectionTitle";
 import ServiceCard from "@/components/ServiceCard";
+import logo from "@/assets/Original-on-transparent.png";
 import heroImg from "@/assets/hero-living-room.jpg";
 import aboutImg from "@/assets/about-interior.jpg";
 import serviceResidential from "@/assets/service-residential.jpg";
@@ -42,11 +43,18 @@ const Index = () => {
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="relative z-10 text-center container-luxury"
         >
+<<<<<<< HEAD
           {/* Logo with reduced size */}
           <img 
             src={logo} 
             alt="Studio Red Logo" 
             className="mx-auto mb-4 max-h-[80px] md:max-h-[120px] max-w-[200px] md:max-w-[300px] w-auto object-contain"
+=======
+          <img
+            src={logo}
+            alt="Studio Red"
+            className="h-28 md:h-36 lg:h-44 w-auto object-contain mx-auto mb-6"
+>>>>>>> lovable-sync-1773927759
           />
           <div className="gold-divider-wide my-8" />
           <p className="font-body text-muted-foreground max-w-xl mx-auto mb-10 text-sm md:text-base leading-relaxed tracking-wide">
