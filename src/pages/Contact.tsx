@@ -31,49 +31,7 @@ const Contact = () => {
     <div>
       <HeroBanner image={servicesHero} title="Contact Us" subtitle="Let's Begin Your Journey" />
 
-      {/* Our Process Section */}
-      <section className="section-padding bg-card">
-        <div className="container-luxury max-w-4xl">
-          <div className="text-center mb-16">
-            <div className="gold-divider mb-6" />
-            <h2 className="font-heading text-3xl md:text-4xl mb-4">Our Process</h2>
-            <p className="font-accent text-lg text-muted-foreground italic">
-              Your Sweet Home is Just 3 Steps Away
-            </p>
-          </div>
-
-          {steps.map((item, i) => (
-            <motion.div
-              key={item.step}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: i * 0.1 }}
-              className={`relative pl-16 lg:pl-24 ${i < steps.length - 1 ? "pb-20 border-l border-primary/20 ml-6" : "ml-6"}`}
-            >
-              <div className="absolute left-0 top-0 -translate-x-1/2 w-12 h-12 border border-primary flex items-center justify-center bg-card">
-                <span className="font-heading text-primary text-lg">{item.step}</span>
-              </div>
-              <h3 className="font-heading text-2xl md:text-3xl mb-4">{item.title}</h3>
-              <p className="font-accent text-lg text-muted-foreground italic leading-relaxed mb-6">
-                {item.desc}
-              </p>
-              <Link
-                to="#contact-form"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" });
-                }}
-                className="bg-primary text-primary-foreground px-8 py-3 text-xs tracking-luxury uppercase hover:bg-gold-dark transition-colors duration-300 inline-block"
-              >
-                {item.cta}
-              </Link>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
-      {/* Contact Section */}
+      {/* Contact Section (Now First) */}
       <section id="contact-form" className="section-padding">
         <div className="container-luxury">
           <div className="grid lg:grid-cols-2 gap-16">
@@ -158,6 +116,48 @@ const Contact = () => {
               <ContactForm />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Our Process Section (Now Second) */}
+      <section className="section-padding bg-card">
+        <div className="container-luxury max-w-4xl">
+          <div className="text-center mb-16">
+            <div className="gold-divider mb-6" />
+            <h2 className="font-heading text-3xl md:text-4xl mb-4">Our Process</h2>
+            <p className="font-accent text-lg text-muted-foreground italic">
+              Your Sweet Home is Just 3 Steps Away
+            </p>
+          </div>
+
+          {steps.map((item, i) => (
+            <motion.div
+              key={item.step}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: i * 0.1 }}
+              className={`relative pl-16 lg:pl-24 ${i < steps.length - 1 ? "pb-20 border-l border-primary/20 ml-6" : "ml-6"}`}
+            >
+              <div className="absolute left-0 top-0 -translate-x-1/2 w-12 h-12 border border-primary flex items-center justify-center bg-card">
+                <span className="font-heading text-primary text-lg">{item.step}</span>
+              </div>
+              <h3 className="font-heading text-2xl md:text-3xl mb-4">{item.title}</h3>
+              <p className="font-accent text-lg text-muted-foreground italic leading-relaxed mb-6">
+                {item.desc}
+              </p>
+              <Link
+                to="#contact-form"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="bg-primary text-primary-foreground px-8 py-3 text-xs tracking-luxury uppercase hover:bg-gold-dark transition-colors duration-300 inline-block"
+              >
+                {item.cta}
+              </Link>
+            </motion.div>
+          ))}
         </div>
       </section>
     </div>

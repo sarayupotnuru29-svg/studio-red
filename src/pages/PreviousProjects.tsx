@@ -5,51 +5,184 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import HeroBanner from "@/components/HeroBanner";
 import servicesHero from "@/assets/services-hero.jpg";
 
-import projectResidential1 from "@/assets/project-residential-1.jpg";
-import serviceResidential from "@/assets/service-residential.jpg";
-import projectCommercial1 from "@/assets/project-commercial-1.jpg";
-import serviceCommercial from "@/assets/service-commercial.jpg";
-import projectTheater1 from "@/assets/project-theater-1.jpg";
-import serviceTheater from "@/assets/service-theater.jpg";
-import projectKitchen1 from "@/assets/project-kitchen-1.jpg";
-import serviceModular from "@/assets/service-modular.jpg";
-import serviceTurnkey from "@/assets/service-turnkey.jpg";
-import serviceProjectMgmt from "@/assets/service-project-mgmt.jpg";
-import serviceExecution from "@/assets/service-execution.jpg";
-import serviceFalseCeiling from "@/assets/service-false-ceiling.jpg";
-import servicePainting from "@/assets/service-painting.jpg";
-import serviceStone from "@/assets/service-stone.jpg";
+// 2BHK Imports
+import b2_1 from "@/assets/2BHK-projects/2 BHK Project/1.jpg";
+import b2_2 from "@/assets/2BHK-projects/2 BHK Project/2.jpg";
+import b2_3 from "@/assets/2BHK-projects/2 BHK Project/3.jpg";
+import b2_4 from "@/assets/2BHK-projects/2 BHK Project/4.jpg";
+import b2_5 from "@/assets/2BHK-projects/2 BHK Project/5.jpg";
+import b2_6 from "@/assets/2BHK-projects/2 BHK Project/6.jpg";
 
-import residential2 from "@/assets/projects/residential-2.jpg";
-import residential3 from "@/assets/projects/residential-3.jpg";
-import residential4 from "@/assets/projects/residential-4.jpg";
-import residential5 from "@/assets/projects/residential-5.jpg";
-import commercial2 from "@/assets/projects/commercial-2.jpg";
-import commercial3 from "@/assets/projects/commercial-3.jpg";
-import commercial4 from "@/assets/projects/commercial-4.jpg";
-import commercial5 from "@/assets/projects/commercial-5.jpg";
-import theater2 from "@/assets/projects/theater-2.jpg";
-import theater3 from "@/assets/projects/theater-3.jpg";
-import theater4 from "@/assets/projects/theater-4.jpg";
-import turnkey2 from "@/assets/projects/turnkey-2.jpg";
-import turnkey3 from "@/assets/projects/turnkey-3.jpg";
-import turnkey4 from "@/assets/projects/turnkey-4.jpg";
-import projectMgmt2 from "@/assets/projects/project-mgmt-2.jpg";
-import projectMgmt3 from "@/assets/projects/project-mgmt-3.jpg";
-import execution2 from "@/assets/projects/execution-2.jpg";
-import execution3 from "@/assets/projects/execution-3.jpg";
-import ceiling2 from "@/assets/projects/ceiling-2.jpg";
-import ceiling3 from "@/assets/projects/ceiling-3.jpg";
-import ceiling4 from "@/assets/projects/ceiling-4.jpg";
-import modular2 from "@/assets/projects/modular-2.jpg";
-import modular3 from "@/assets/projects/modular-3.jpg";
-import modular4 from "@/assets/projects/modular-4.jpg";
-import painting2 from "@/assets/projects/painting-2.jpg";
-import painting3 from "@/assets/projects/painting-3.jpg";
-import painting4 from "@/assets/projects/painting-4.jpg";
-import stone2 from "@/assets/projects/stone-2.jpg";
-import stone3 from "@/assets/projects/stone-3.jpg";
-import stone4 from "@/assets/projects/stone-4.jpg";
+// 3BHK Imports
+import b3_1 from "@/assets/3BHK-projects/3BHK Project/1.jpg";
+import b3_2 from "@/assets/3BHK-projects/3BHK Project/2.jpg";
+import b3_3 from "@/assets/3BHK-projects/3BHK Project/3.jpg";
+import b3_4 from "@/assets/3BHK-projects/3BHK Project/4.jpg";
+import b3_5 from "@/assets/3BHK-projects/3BHK Project/5.jpg";
+import b3_6 from "@/assets/3BHK-projects/3BHK Project/6.jpg";
+
+// Boutique Imports
+import bt_1 from "@/assets/botique/Boutique Vij/1.jpg";
+import bt_2 from "@/assets/botique/Boutique Vij/2.jpg";
+import bt_3 from "@/assets/botique/Boutique Vij/3.jpg";
+import bt_4 from "@/assets/botique/Boutique Vij/4.jpg";
+import bt_5 from "@/assets/botique/Boutique Vij/5.jpg";
+import bt_6 from "@/assets/botique/Boutique Vij/6.jpg";
+import bt_7 from "@/assets/botique/Boutique Vij/7.jpg";
+import bt_8 from "@/assets/botique/Boutique Vij/8.jpg";
+import btw_1 from "@/assets/botique/Boutique Vij/Working1.jpg";
+import btw_2 from "@/assets/botique/Boutique Vij/Working2.jpg";
+import btw_3 from "@/assets/botique/Boutique Vij/Working3.jpg";
+import btw_4 from "@/assets/botique/Boutique Vij/Working4.jpg";
+import btw_5 from "@/assets/botique/Boutique Vij/Working5.jpg";
+
+// Guntur 3BHK
+import gt_1 from "@/assets/guntur-3BHK/Guntur3BHK/1.jpg";
+import gt_2 from "@/assets/guntur-3BHK/Guntur3BHK/2.jpg";
+import gt_3 from "@/assets/guntur-3BHK/Guntur3BHK/3.jpg";
+import gt_4 from "@/assets/guntur-3BHK/Guntur3BHK/4.jpg";
+import gt_5 from "@/assets/guntur-3BHK/Guntur3BHK/5.jpg";
+import gt_6 from "@/assets/guntur-3BHK/Guntur3BHK/6.jpg";
+import gt_7 from "@/assets/guntur-3BHK/Guntur3BHK/7.jpg";
+import gt_8 from "@/assets/guntur-3BHK/Guntur3BHK/8.jpg";
+import gt_9 from "@/assets/guntur-3BHK/Guntur3BHK/9.jpg";
+import gt_10 from "@/assets/guntur-3BHK/Guntur3BHK/10.jpg";
+import gt_11 from "@/assets/guntur-3BHK/Guntur3BHK/11.jpg";
+import gt_12 from "@/assets/guntur-3BHK/Guntur3BHK/12.jpg";
+
+// Honer Homes
+import hh_1 from "@/assets/honer-homes/HonerHomes-Aquantis/1.jpeg";
+import hh_2 from "@/assets/honer-homes/HonerHomes-Aquantis/2.jpeg";
+import hh_3 from "@/assets/honer-homes/HonerHomes-Aquantis/3.jpeg";
+import hh_4 from "@/assets/honer-homes/HonerHomes-Aquantis/4.jpeg";
+import hh_5 from "@/assets/honer-homes/HonerHomes-Aquantis/5.jpeg";
+import hh_6 from "@/assets/honer-homes/HonerHomes-Aquantis/6.jpeg";
+import hh_7 from "@/assets/honer-homes/HonerHomes-Aquantis/7.jpeg";
+import hh_8 from "@/assets/honer-homes/HonerHomes-Aquantis/8.jpeg";
+import hh_9 from "@/assets/honer-homes/HonerHomes-Aquantis/9.jpeg";
+import hh_10 from "@/assets/honer-homes/HonerHomes-Aquantis/10.jpeg";
+import hh_11 from "@/assets/honer-homes/HonerHomes-Aquantis/11.jpeg";
+import hh_12 from "@/assets/honer-homes/HonerHomes-Aquantis/12.jpeg";
+import hh_13 from "@/assets/honer-homes/HonerHomes-Aquantis/13.jpeg";
+import hh_14 from "@/assets/honer-homes/HonerHomes-Aquantis/14.jpeg";
+import hh_15 from "@/assets/honer-homes/HonerHomes-Aquantis/15.jpeg";
+import hh_16 from "@/assets/honer-homes/HonerHomes-Aquantis/16.jpeg";
+
+// Jewellery Office
+import jo_1 from "@/assets/jewellery-office/JewelleryOffice-Eluru/1.jpg";
+import jo_2 from "@/assets/jewellery-office/JewelleryOffice-Eluru/2.jpg";
+import jo_3 from "@/assets/jewellery-office/JewelleryOffice-Eluru/3.jpg";
+import jo_4 from "@/assets/jewellery-office/JewelleryOffice-Eluru/4.jpg";
+import jo_5 from "@/assets/jewellery-office/JewelleryOffice-Eluru/5.jpg";
+
+// NSL East County
+import nsl_1 from "@/assets/NSL-east-Country/NSLEastCounty/1.jpeg";
+import nsl_2 from "@/assets/NSL-east-Country/NSLEastCounty/2.jpeg";
+import nsl_3 from "@/assets/NSL-east-Country/NSLEastCounty/3.jpeg";
+import nsl_4 from "@/assets/NSL-east-Country/NSLEastCounty/4.jpeg";
+import nsl_5 from "@/assets/NSL-east-Country/NSLEastCounty/5.jpeg";
+import nsl_6 from "@/assets/NSL-east-Country/NSLEastCounty/6.jpeg";
+import nsl_7 from "@/assets/NSL-east-Country/NSLEastCounty/7.jpeg";
+import nsl_8 from "@/assets/NSL-east-Country/NSLEastCounty/8.jpeg";
+import nsl_9 from "@/assets/NSL-east-Country/NSLEastCounty/9.jpeg";
+import nsl_10 from "@/assets/NSL-east-Country/NSLEastCounty/10.jpeg";
+import nsl_11 from "@/assets/NSL-east-Country/NSLEastCounty/11.jpeg";
+import nsl_12 from "@/assets/NSL-east-Country/NSLEastCounty/12.jpeg";
+import nsl_13 from "@/assets/NSL-east-Country/NSLEastCounty/13.jpeg";
+import nsl_14 from "@/assets/NSL-east-Country/NSLEastCounty/14.jpeg";
+import nsl_15 from "@/assets/NSL-east-Country/NSLEastCounty/15.jpeg";
+import nsl_16 from "@/assets/NSL-east-Country/NSLEastCounty/16.jpeg";
+import nsl_17 from "@/assets/NSL-east-Country/NSLEastCounty/17.jpeg";
+import nsl_18 from "@/assets/NSL-east-Country/NSLEastCounty/18.jpeg";
+
+// Siliguri
+import sl_1 from "@/assets/siliguri/Siliguri-3BHK/1.jpg";
+import sl_2 from "@/assets/siliguri/Siliguri-3BHK/2.jpg";
+import sl_3 from "@/assets/siliguri/Siliguri-3BHK/3.jpg";
+import sl_4 from "@/assets/siliguri/Siliguri-3BHK/4.jpg";
+import sl_5 from "@/assets/siliguri/Siliguri-3BHK/5.jpg";
+import sl_6 from "@/assets/siliguri/Siliguri-3BHK/6.jpg";
+import sl_7 from "@/assets/siliguri/Siliguri-3BHK/7.jpg";
+import sl_8 from "@/assets/siliguri/Siliguri-3BHK/8.jpg";
+import sl_9 from "@/assets/siliguri/Siliguri-3BHK/9.jpg";
+import sl_10 from "@/assets/siliguri/Siliguri-3BHK/10.jpg";
+import sl_11 from "@/assets/siliguri/Siliguri-3BHK/11.jpg";
+import sl_12 from "@/assets/siliguri/Siliguri-3BHK/12.jpg";
+import sl_13 from "@/assets/siliguri/Siliguri-3BHK/13.jpg";
+import sl_14 from "@/assets/siliguri/Siliguri-3BHK/14.jpg";
+import sl_15 from "@/assets/siliguri/Siliguri-3BHK/15.jpg";
+import sl_16 from "@/assets/siliguri/Siliguri-3BHK/16.jpg";
+import sl_17 from "@/assets/siliguri/Siliguri-3BHK/17.jpg";
+import sl_18 from "@/assets/siliguri/Siliguri-3BHK/18.jpg";
+import sl_19 from "@/assets/siliguri/Siliguri-3BHK/19.jpg";
+import sl_20 from "@/assets/siliguri/Siliguri-3BHK/20.jpg";
+
+// Sri Adithya Athena
+import sa_1 from "@/assets/sri-adithya-athena/SriAdithyaAthena/1.jpeg";
+import sa_2 from "@/assets/sri-adithya-athena/SriAdithyaAthena/2.jpeg";
+import sa_3 from "@/assets/sri-adithya-athena/SriAdithyaAthena/3.jpeg";
+import sa_4 from "@/assets/sri-adithya-athena/SriAdithyaAthena/4.jpeg";
+import sa_5 from "@/assets/sri-adithya-athena/SriAdithyaAthena/5.jpeg";
+import sa_6 from "@/assets/sri-adithya-athena/SriAdithyaAthena/6.jpeg";
+import sa_7 from "@/assets/sri-adithya-athena/SriAdithyaAthena/7.jpeg";
+import sa_8 from "@/assets/sri-adithya-athena/SriAdithyaAthena/8.jpeg";
+import sa_9 from "@/assets/sri-adithya-athena/SriAdithyaAthena/9.jpeg";
+import sa_10 from "@/assets/sri-adithya-athena/SriAdithyaAthena/10.jpeg";
+import sa_11 from "@/assets/sri-adithya-athena/SriAdithyaAthena/11.jpeg";
+import sa_12 from "@/assets/sri-adithya-athena/SriAdithyaAthena/12.jpeg";
+import sa_13 from "@/assets/sri-adithya-athena/SriAdithyaAthena/13.jpeg";
+import sa_14 from "@/assets/sri-adithya-athena/SriAdithyaAthena/14.jpeg";
+import sa_15 from "@/assets/sri-adithya-athena/SriAdithyaAthena/15.jpeg";
+import sa_16 from "@/assets/sri-adithya-athena/SriAdithyaAthena/16.jpeg";
+import sa_17 from "@/assets/sri-adithya-athena/SriAdithyaAthena/17.jpeg";
+import sa_18 from "@/assets/sri-adithya-athena/SriAdithyaAthena/18.jpeg";
+import sa_19 from "@/assets/sri-adithya-athena/SriAdithyaAthena/19.jpeg";
+import sa_20 from "@/assets/sri-adithya-athena/SriAdithyaAthena/20.jpeg";
+import sa_21 from "@/assets/sri-adithya-athena/SriAdithyaAthena/21.jpeg";
+import sa_22 from "@/assets/sri-adithya-athena/SriAdithyaAthena/22.jpeg";
+import sa_23 from "@/assets/sri-adithya-athena/SriAdithyaAthena/23.jpeg";
+
+// SRR River
+import srr_1 from "@/assets/SRR-River/SRR-River/1.jpeg";
+import srr_2 from "@/assets/SRR-River/SRR-River/2.jpeg";
+import srr_3 from "@/assets/SRR-River/SRR-River/3.jpeg";
+import srr_4 from "@/assets/SRR-River/SRR-River/4.jpeg";
+import srr_5 from "@/assets/SRR-River/SRR-River/5.jpeg";
+import srr_6 from "@/assets/SRR-River/SRR-River/6.jpeg";
+import srr_7 from "@/assets/SRR-River/SRR-River/7.jpeg";
+import srr_8 from "@/assets/SRR-River/SRR-River/8.jpeg";
+import srr_9 from "@/assets/SRR-River/SRR-River/9.jpeg";
+import srr_10 from "@/assets/SRR-River/SRR-River/10.jpeg";
+import srr_11 from "@/assets/SRR-River/SRR-River/11.jpeg";
+import srr_12 from "@/assets/SRR-River/SRR-River/12.jpeg";
+import srr_13 from "@/assets/SRR-River/SRR-River/13.jpeg";
+import srr_14 from "@/assets/SRR-River/SRR-River/14.jpeg";
+import srr_15 from "@/assets/SRR-River/SRR-River/15.jpeg";
+import srr_16 from "@/assets/SRR-River/SRR-River/16.jpeg";
+
+// Tadepalli Villa
+import tv_1 from "@/assets/Tadepalli-Villa/TadepalliVilla/1.jpg";
+import tv_2 from "@/assets/Tadepalli-Villa/TadepalliVilla/2.jpg";
+import tv_3 from "@/assets/Tadepalli-Villa/TadepalliVilla/3.jpg";
+import tv_4 from "@/assets/Tadepalli-Villa/TadepalliVilla/4.jpg";
+import tv_5 from "@/assets/Tadepalli-Villa/TadepalliVilla/5.jpg";
+import tv_6 from "@/assets/Tadepalli-Villa/TadepalliVilla/6.jpg";
+import tv_7 from "@/assets/Tadepalli-Villa/TadepalliVilla/7.jpg";
+
+// Villa5 VR Constructions
+import v5_1 from "@/assets/Villa5-VR-Constructions/Villa5-VRConstructions/1.jpg";
+import v5_2 from "@/assets/Villa5-VR-Constructions/Villa5-VRConstructions/2.jpg";
+import v5_3 from "@/assets/Villa5-VR-Constructions/Villa5-VRConstructions/3.jpg";
+import v5_4 from "@/assets/Villa5-VR-Constructions/Villa5-VRConstructions/4.jpg";
+import v5_5 from "@/assets/Villa5-VR-Constructions/Villa5-VRConstructions/5.jpg";
+import v5_6 from "@/assets/Villa5-VR-Constructions/Villa5-VRConstructions/6.jpg";
+import v5_7 from "@/assets/Villa5-VR-Constructions/Villa5-VRConstructions/7.jpg";
+import v5_8 from "@/assets/Villa5-VR-Constructions/Villa5-VRConstructions/8.jpg";
+import v5_9 from "@/assets/Villa5-VR-Constructions/Villa5-VRConstructions/9.jpg";
+import v5_10 from "@/assets/Villa5-VR-Constructions/Villa5-VRConstructions/10.jpg";
+import v5_11 from "@/assets/Villa5-VR-Constructions/Villa5-VRConstructions/11.jpg";
+import v5_12 from "@/assets/Villa5-VR-Constructions/Villa5-VRConstructions/12.jpg";
+import v5_13 from "@/assets/Villa5-VR-Constructions/Villa5-VRConstructions/13.jpg";
 
 interface Project {
   id: string;
@@ -59,91 +192,107 @@ interface Project {
   gallery: string[];
 }
 
-const projects: Project[] = [
-  {
-    id: "res-1",
-    title: "Modern Villa Living Room",
-    serviceId: "residential-interiors",
-    featuredImage: projectResidential1,
-    gallery: [projectResidential1, serviceResidential, residential2, residential3, residential4, residential5],
-  },
-  {
-    id: "com-1",
-    title: "Corporate Office Redesign",
-    serviceId: "commercial-interiors",
-    featuredImage: projectCommercial1,
-    gallery: [projectCommercial1, serviceCommercial, commercial2, commercial3, commercial4, commercial5],
-  },
-  {
-    id: "the-1",
-    title: "Private Home Cinema",
-    serviceId: "home-theatres",
-    featuredImage: projectTheater1,
-    gallery: [projectTheater1, serviceTheater, theater2, theater3, theater4],
-  },
-  {
-    id: "tur-1",
-    title: "Turnkey Luxury Apartment",
-    serviceId: "turnkey-projects",
-    featuredImage: serviceTurnkey,
-    gallery: [serviceTurnkey, turnkey2, turnkey3, turnkey4, projectResidential1],
-  },
-  {
-    id: "pm-1",
-    title: "Multi-Floor Project Coordination",
-    serviceId: "project-management",
-    featuredImage: serviceProjectMgmt,
-    gallery: [serviceProjectMgmt, projectMgmt2, projectMgmt3, serviceExecution, commercial2],
-  },
-  {
-    id: "de-1",
-    title: "End-to-End Interior Transformation",
-    serviceId: "design-execution",
-    featuredImage: serviceExecution,
-    gallery: [serviceExecution, execution2, execution3, projectResidential1, residential2],
-  },
-  {
-    id: "fc-1",
-    title: "Luxury False Ceiling Installation",
-    serviceId: "false-ceilings",
-    featuredImage: serviceFalseCeiling,
-    gallery: [serviceFalseCeiling, ceiling2, ceiling3, ceiling4, residential3],
-  },
-  {
-    id: "mod-1",
-    title: "Modular Kitchen & Wardrobe Suite",
-    serviceId: "modular-wardrobes-kitchens",
-    featuredImage: projectKitchen1,
-    gallery: [projectKitchen1, serviceModular, modular2, modular3, modular4],
-  },
-  {
-    id: "pai-1",
-    title: "Custom Wall Art & Painting",
-    serviceId: "painting-customisation",
-    featuredImage: servicePainting,
-    gallery: [servicePainting, painting2, painting3, painting4, residential4],
-  },
-  {
-    id: "sto-1",
-    title: "Premium Stone & Tile Work",
-    serviceId: "granite-quartz-marble-tiles",
-    featuredImage: serviceStone,
-    gallery: [serviceStone, stone2, stone3, stone4, residential5],
-  },
-];
-
 const serviceCategories = [
   { id: "all", label: "All Projects" },
-  { id: "residential-interiors", label: "Residential" },
-  { id: "commercial-interiors", label: "Commercial" },
-  { id: "home-theatres", label: "Home Theatres" },
-  { id: "turnkey-projects", label: "Turnkey" },
-  { id: "project-management", label: "Project Mgmt" },
-  { id: "design-execution", label: "Design & Execution" },
-  { id: "false-ceilings", label: "False Ceilings" },
-  { id: "modular-wardrobes-kitchens", label: "Modular" },
-  { id: "painting-customisation", label: "Painting" },
-  { id: "granite-quartz-marble-tiles", label: "Stone & Tiles" },
+  { id: "2bhk-projects", label: "2BHK Projects" },
+  { id: "3bhk-projects", label: "3BHK Projects" },
+  { id: "boutique", label: "Boutique" },
+  { id: "guntur-3bhk", label: "Guntur 3BHK" },
+  { id: "honer-homes", label: "Honer Homes" },
+  { id: "jewellery-office", label: "Jewellery Office" },
+  { id: "nsl-east-country", label: "NSL East Country" },
+  { id: "siliguri", label: "Siliguri" },
+  { id: "sri-adithya-athena", label: "Sri Adithya Athena" },
+  { id: "srr-river", label: "SRR River" },
+  { id: "tadepalli-villa", label: "Tadepalli Villa" },
+  { id: "villa5-vr-constructions", label: "Villa5 VR Constructions" },
+];
+
+const projects: Project[] = [
+  {
+    id: "proj-1",
+    title: "2 BHK Residential Project",
+    serviceId: "2bhk-projects",
+    featuredImage: b2_1,
+    gallery: [b2_1, b2_2, b2_3, b2_4, b2_5, b2_6],
+  },
+  {
+    id: "proj-2",
+    title: "3 BHK Premium Project",
+    serviceId: "3bhk-projects",
+    featuredImage: b3_1,
+    gallery: [b3_1, b3_2, b3_3, b3_4, b3_5, b3_6],
+  },
+  {
+    id: "proj-3",
+    title: "Boutique Vijayawada",
+    serviceId: "boutique",
+    featuredImage: bt_1,
+    gallery: [bt_1, bt_2, bt_3, bt_4, bt_5, bt_6, bt_7, bt_8, btw_1, btw_2, btw_3, btw_4, btw_5],
+  },
+  {
+    id: "proj-4",
+    title: "Guntur 3BHK Residence",
+    serviceId: "guntur-3bhk",
+    featuredImage: gt_1,
+    gallery: [gt_1, gt_2, gt_3, gt_4, gt_5, gt_6, gt_7, gt_8, gt_9, gt_10, gt_11, gt_12],
+  },
+  {
+    id: "proj-5",
+    title: "Honer Homes Aquantis",
+    serviceId: "honer-homes",
+    featuredImage: hh_1,
+    gallery: [hh_1, hh_2, hh_3, hh_4, hh_5, hh_6, hh_7, hh_8, hh_9, hh_10, hh_11, hh_12, hh_13, hh_14, hh_15, hh_16],
+  },
+  {
+    id: "proj-6",
+    title: "Jewellery Office Eluru",
+    serviceId: "jewellery-office",
+    featuredImage: jo_1,
+    gallery: [jo_1, jo_2, jo_3, jo_4, jo_5],
+  },
+  {
+    id: "proj-7",
+    title: "NSL East County",
+    serviceId: "nsl-east-country",
+    featuredImage: nsl_1,
+    gallery: [nsl_1, nsl_2, nsl_3, nsl_4, nsl_5, nsl_6, nsl_7, nsl_8, nsl_9, nsl_10, nsl_11, nsl_12, nsl_13, nsl_14, nsl_15, nsl_16, nsl_17, nsl_18],
+  },
+  {
+    id: "proj-8",
+    title: "Siliguri 3BHK Project",
+    serviceId: "siliguri",
+    featuredImage: sl_1,
+    gallery: [sl_1, sl_2, sl_3, sl_4, sl_5, sl_6, sl_7, sl_8, sl_9, sl_10, sl_11, sl_12, sl_13, sl_14, sl_15, sl_16, sl_17, sl_18, sl_19, sl_20],
+  },
+  {
+    id: "proj-9",
+    title: "Sri Adithya Athena",
+    serviceId: "sri-adithya-athena",
+    featuredImage: sa_1,
+    gallery: [sa_1, sa_2, sa_3, sa_4, sa_5, sa_6, sa_7, sa_8, sa_9, sa_10, sa_11, sa_12, sa_13, sa_14, sa_15, sa_16, sa_17, sa_18, sa_19, sa_20, sa_21, sa_22, sa_23],
+  },
+  {
+    id: "proj-10",
+    title: "SRR River View",
+    serviceId: "srr-river",
+    featuredImage: srr_1,
+    gallery: [srr_1, srr_2, srr_3, srr_4, srr_5, srr_6, srr_7, srr_8, srr_9, srr_10, srr_11, srr_12, srr_13, srr_14, srr_15, srr_16],
+  },
+  {
+    id: "proj-11",
+    title: "Tadepalli Villa",
+    serviceId: "tadepalli-villa",
+    featuredImage: tv_1,
+    gallery: [tv_1, tv_2, tv_3, tv_4, tv_5, tv_6, tv_7],
+  },
+  {
+    id: "proj-12",
+    title: "Villa 5 VR Constructions",
+    serviceId: "villa5-vr-constructions",
+    featuredImage: v5_1,
+    gallery: [v5_1, v5_2, v5_3, v5_4, v5_5, v5_6, v5_7, v5_8, v5_9, v5_10, v5_11, v5_12, v5_13],
+  },
 ];
 
 const PreviousProjects = () => {
@@ -186,7 +335,6 @@ const PreviousProjects = () => {
 
       <section className="section-padding">
         <div className="container-luxury">
-          {/* Filter Tabs */}
           <div className="flex flex-wrap justify-center gap-3 mb-16">
             {serviceCategories.map((cat) => (
               <button
@@ -203,7 +351,6 @@ const PreviousProjects = () => {
             ))}
           </div>
 
-          {/* Projects Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             <AnimatePresence mode="popLayout">
               {filteredProjects.map((project) => (
@@ -249,7 +396,6 @@ const PreviousProjects = () => {
         </div>
       </section>
 
-      {/* Lightbox */}
       <AnimatePresence>
         {lightbox && (
           <motion.div
